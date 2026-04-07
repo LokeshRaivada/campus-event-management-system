@@ -1,0 +1,64 @@
+{
+  "superAdmins": [
+    {
+      "id": 1,
+      "username": "superadmin",
+      "email": "superadmin@gmail.com",
+      "password": "$2b$10$qjzcCMqDu2dk7dYoJWY4MuK5VUhvMP1aPMK7anyvEGqu7qThQ1.iS",
+      "role": "super_admin",
+      "created_at": "2026-02-25T17:13:10.000Z"
+    }
+  ],
+  "admins": [
+    {
+      "id": 1,
+      "username": "Raivada Lokesh",
+      "email": "lokesh@123",
+      "password": "$2b$10$jpY0EUzXcu1QPx/./C6PNuKP2aHxMruxiXAyrXcd4q03seJe7pY5W",
+      "role": "admin",
+      "created_at": "2026-02-27T17:20:34.000Z",
+      "department": null,
+      "clubName": null,
+      "status": "active"
+    },
+    {
+      "id": 5,
+      "username": "sathwik reddy",
+      "email": "sathwik@gmail.com",
+      "password": "$2b$10$LtrwtFytEZ/fHbqJU0qmE.B/yq3zFMSYIi8YY4OnSgp0xkRT4iFMK",
+      "role": "Event Manager",
+      "created_at": "2026-03-03T17:10:59.000Z",
+      "department": "CSE",
+      "clubName": "Cultural Club",
+      "status": "active"
+    }
+  ],
+  "students": [
+    {
+      "id": 2,
+      "name": "sashank",
+      "email": "sashank@gmail.com",
+      "roll_no": "23341a0589",
+      "password": "$2b$10$HXUVf2natkPu13NBrFs05ewf84xjOzYF1VMh2qLoe5tvT/0FxQO9O",
+      "club_id": null,
+      "role": "student",
+      "department": null,
+      "year": null,
+      "status": "active",
+      "created_at": "2026-02-27T18:01:55.000Z"
+    },
+    {
+      "id": 3,
+      "name": "lokesh",
+      "email": "raivadalokesh@gmail.com",
+      "roll_no": "24r44",
+      "password": "$2b$10$.lwARA1SfDBb.LdYwsp5vOCymTCHblQBoLRcj7pZeVA56WREXB7xi",
+      "club_id": null,
+      "role": "student",
+      "department": "CSE",
+      "year": "3rd",
+      "status": "active",
+      "created_at": "2026-03-02T18:26:34.000Z"
+    }
+  ]
+}
