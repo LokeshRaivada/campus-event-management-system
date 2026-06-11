@@ -4,7 +4,7 @@ import { X, User, Shield, Crown, ArrowLeft, Mail, Loader2, KeyRound, RefreshCw, 
 import { useAuth } from '../context/AuthContext';
 import './LoginModal.css';
 
-const API_URL = 'http://localhost:5555/api';
+const API_URL = 'https://event-backend-api-syye.onrender.com/api';
 
 const roles = [
   {
