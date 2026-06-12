@@ -54,6 +54,36 @@ app.get('/health', (req, res) => {
     res.json({ status: 'OK', message: 'Event Management API is healthy' });
 });
 
+// Temporary Migration Route
+app.get('/api/migrate', async (req, res) => {
+    try {
+        const fs = require('fs');
+        const path = require('path');
+        const mysql = require('mysql2/promise');
+        const sqlScript = fs.readFileSync(path.join(__dirname, 'dump.sql'), 'utf-8');
+        
+        // We must create a specific connection with multipleStatements: true
+        // The pool in db.js does not have multipleStatements: true
+        const connection = await mysql.createConnection({
+            host: process.env.DB_HOST,
+            port: process.env.DB_PORT || 3306,
+            user: process.env.DB_USER,
+            password: process.env.DB_PASSWORD,
+            database: process.env.DB_NAME,
+            multipleStatements: true,
+            ssl: { rejectUnauthorized: false }
+        });
+        
+        await connection.query(sqlScript);
+        await connection.end();
+        
+        res.status(200).json({ success: true, message: 'Database migrated successfully!' });
+    } catch (err) {
+        console.error('Migration error:', err);
+        res.status(500).json({ success: false, message: 'Migration failed', error: err.message });
+    }
+});
+
 // Global Error Handler
 app.use((err, req, res, next) => {
     console.error(`[Global Error] ${req.method} ${req.url}:`, err.message);
