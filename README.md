@@ -104,32 +104,30 @@ The core entities of the system are structured as follows:
 
 ## 📸 Platform Previews
 
-> **Important Note**: The images below are referenced from the local `docs/` folder. Please ensure you upload the provided screenshots into the `docs/` directory of your repository with the exact filenames listed below for them to render properly.
-
 ### 🏠 Homepage
 Discover, register, and participate in campus events.
 
-![Homepage](./docs/homepage.png)
+![Homepage](./docs/home.png)
 
-### 📊 Super Admin Analytics
-Platform overview and performance metrics across all clubs and events.
+### 📊 Super Admin Dashboard & Analytics
+Platform overview, performance metrics, and pending approvals.
 
-![Super Admin Analytics](./docs/super-admin-analytics.png)
-
-### 🛡️ Super Admin Dashboard
-Manage pending approvals and oversee platform activity.
-
-![Super Admin Dashboard](./docs/super-admin-dashboard.png)
+![Super Admin Dashboard](./docs/superadmin.png)
 
 ### 🛠️ Admin Dashboard
 Manage club events, view registrations, and handle day-to-day operations.
 
-![Admin Dashboard](./docs/admin-dashboard.png)
+![Admin Dashboard](./docs/admin.png)
+
+### 🎓 Student Portal
+Discover upcoming technical and cultural events and register instantly.
+
+![Student Portal](./docs/student.png)
 
 ### 📱 Event Entry Validation
 Scan student QR codes to verify registration and mark attendance.
 
-![Event Entry Validation](./docs/event-entry-validation.png)
+![Event Entry Validation](./docs/attendance.png)
 
 ---
 
